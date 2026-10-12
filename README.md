@@ -9,7 +9,9 @@ Public support and privacy pages for the macOS app. Plain HTML and CSS; no build
 
 ## Publish once
 
-In this repository on GitHub, open **Settings → Pages**. Choose **Deploy from a branch**, select **main** and **/ (root)**, and save. After the deployment completes, check both public pages before using their URLs in App Store Connect. Subsequent pushes to `main` publish automatically.
+In this repository on GitHub, open **Settings → Pages**. Under **Build and deployment → Source**, choose **GitHub Actions**. The workflow in `.github/workflows/pages.yml` publishes the static files on every push to `main`.
+
+Open **Actions → Deploy website to GitHub Pages** to see deployment progress. To publish without changing content, select **Run workflow → main → Run workflow**. If a run failed before the Pages source was changed, use **Re-run all jobs** on that run after changing the setting. After the deployment completes, check both public pages before using their URLs in App Store Connect.
 
 ## Edit and preview
 
